@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/13/16/04/location-2500913_640.jpg);
+    background-size: cover
+}
+
+@font-face {
+    font-family: harry potter;
+    src: url(./harry_p/HARRYP__.TTF);
+}
+
+h1{
+    font-family: harry potter;
+    font-size: 3em;
+    text-align: center;
+    color: #f3eaea;
+    text-shadow: 5px 5px 8px red;
+}
+
+.container{
+    width: 800px;
+    height: 460px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px #000000;
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.bar{
+    background-color: #0000ffa4;
+    width: 30px;
+    height: 8px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+
+  }
+    
+    
+
+
+.bar:hover{
+    background-color: #23f823;
+    
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    
+}
+
+#imagem2:checked ~ .navegacao{
+    background-color: #ff0e36;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 700%;
+}
+
+.imagem{
+    width: 16.66666666666667%;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left:-16.66666666666667%; ;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.333333333%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.66666666666667%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.333333334%;
+}
+
+#imagem7:checked ~ .img1{
+    margin-left: -100%;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    font-family: harry potter;
+    font-size: 33px;
+    text-shadow: 5px 5px 8px red;
+}
+
